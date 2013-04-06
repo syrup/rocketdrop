@@ -9,6 +9,8 @@ gem 'sqlite3'
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'shoulda-matchers'
+  gem 'fuubar'
   gem 'cucumber-rails', :require => false
 end
 
