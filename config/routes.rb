@@ -1,4 +1,9 @@
 Rocketdrop::Application.routes.draw do
+
+  resources :downloads, :only => [:new, :create]
+
+  root :to => 'downloads#new'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
