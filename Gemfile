@@ -17,6 +17,7 @@ group :test do
   gem 'fuubar'
   gem 'capybara'
   gem 'database_cleaner'
+  gem 'simplecov'
 end
 
 # Gems used only for assets and not required
