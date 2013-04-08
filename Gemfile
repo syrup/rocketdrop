@@ -9,6 +9,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec'
   gem 'cucumber-rails', :require => false
+  gem 'gherkin', '<= 2.11.6'
 end
 
 group :test do
