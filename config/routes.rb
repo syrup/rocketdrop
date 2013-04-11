@@ -1,6 +1,6 @@
 Rocketdrop::Application.routes.draw do
 
-  resources :downloads, :only => [:new, :create]
+  resources :downloads, :only => [:new, :show, :create]
 
   root :to => 'downloads#new'
 
