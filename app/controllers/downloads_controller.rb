@@ -4,6 +4,11 @@ class DownloadsController < ApplicationController
     @download = Download.new
   end
 
+  def show
+    @download = Download.find_by_id(params[:id])
+    redirect_to root_path, :error => "Download not found" if @download.nil?
+  end
+
   def create
     @download = Download.new(params[:download])
     if @download.save
