@@ -12,5 +12,5 @@ Given(/^I visit an invalid download link$/) do
 end
 
 Then(/^I should be redirected to the home page$/) do
-  response.should be_redirect
+  current_path.should == root_path
 end
