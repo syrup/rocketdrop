@@ -8,7 +8,9 @@
 </head>
 <body>
 
-  <%= flash[:notice] %>
+  <% if flash[:notice] %>
+    <%= flash[:notice] %>
+  <% end %>
   <%= flash[:error] %>
 
   <%= yield %>
