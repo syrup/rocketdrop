@@ -32,4 +32,6 @@ group :assets do
   gem 'therubyracer'
 
   gem 'uglifier', '>= 1.0.3'
+  gem 'zurb-foundation', '~> 4.1.2'
+  gem 'foundation-icons-sass-rails'
 end
